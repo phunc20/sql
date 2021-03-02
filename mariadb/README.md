@@ -1,4 +1,9 @@
-### Some Common Commands
+### Some Common Commands and Good Practices
+- **escape reserved words**, i.e. avoid coincidence with reserved MySQL keywords, **use `` to surround it**, e.g.
+  ```mysql
+  # If weird_table contains columns named FROM, WHERE, etc.
+  SELECT `FROM`, `WHERE` FROM weird_table;
+  ```
 - show/list all databases: `SHOW DATABASES;`
   ```mysql
   MariaDB [(none)]> SHOW DATABASES;
