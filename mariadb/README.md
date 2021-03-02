@@ -1,3 +1,50 @@
+### Some Common Commands
+- show/list all databases: `SHOW DATABASES;`
+  ```mysql
+  MariaDB [(none)]> SHOW DATABASES;
+  +--------------------+
+  | Database           |
+  +--------------------+
+  | gfg                |
+  | information_schema |
+  | test               |
+  +--------------------+
+  3 rows in set (0.001 sec)
+  ```
+- show all tables (in current database): `SHOW TABLES;`
+  ```mysql
+  MariaDB [gfg]> SHOW TABLES;
+  Empty set (0.001 sec)
+  ```
+- execute SQL commands collected in a file: `source <filename>` or equivalently `\. <filename>`
+  ```mysql
+  MariaDB [gfg]> \. schema.sql
+  Query OK, 0 rows affected (0.013 sec)
+  
+  Query OK, 0 rows affected (0.014 sec)
+  
+  Query OK, 1 row affected (0.002 sec)
+  
+  Query OK, 1 row affected (0.001 sec)
+  
+  Query OK, 1 row affected (0.003 sec)
+  
+  Query OK, 1 row affected (0.001 sec)
+  
+  Query OK, 1 row affected (0.001 sec)
+  
+  Query OK, 1 row affected (0.001 sec)
+  
+  MariaDB [gfg]>
+  ```
+
+
+
+
+
+
+### A-ranger
+```bash
 ~ ❯❯❯ sudo mysql -u root -p
 Enter password:
 Welcome to the MariaDB monitor.  Commands end with ; or \g.
@@ -49,3 +96,4 @@ MariaDB [db_gfg]> show grants for 'phunc20'@'localhost';
 4 rows in set (0.000 sec)
 
 MariaDB [db_gfg]>
+```
